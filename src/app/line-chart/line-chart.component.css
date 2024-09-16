@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50rem
+}
+  
+  /* canvas {
+   
+    background-color: rgb(240, 236, 236);
+    height: 0;
+    overflow-x: scroll;
+
+   
+  } */
+
+  
+  .chart-container {
+    width: 100%; 
+    /* overflow-x: scroll; 
+    white-space: nowrap;  */
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  canvas {
+   min-width: 800px; 
+    max-width: 50%; 
+
+  }
+  
+  #chart{
+    width: 40%;
+  }
+  

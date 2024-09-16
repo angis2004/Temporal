@@ -1,0 +1,35 @@
+<p>home works!</p>
+<main class="content px-3 py-2"></main>
+  <div class="main-p-3">
+    <div class="row row-custom">
+      <!-- Tarjeta de Casino -->
+      <div class="column" *ngIf="casinoData">
+        <div class="custom-card casino-card">
+          <div class="card-body">
+            <div class="card-content">
+              <h4 class="card-title">Datos de Casino</h4>
+         
+              <p class="card-text">Fecha : {{ casinoData.FechaCronologica }}</p>
+              <p class="card-text">En Fila: {{ casinoData.EnFila }}</p>
+              <p class="card-text">Cafetin: {{ casinoData.Cafetin }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta de TGM -->
+      <div class="column" *ngIf="tgmData">
+        <div class="custom-card tgm-card">
+          <div class="card-body">
+            <div class="card-content">
+              <h4 class="card-title">Datos de TGM</h4>
+         
+              <p class="card-text">Fecha : {{ tgmData.FechaRegistro }}</p>
+              <p class="card-text">CardedSoles: {{ tgmData.CardedDolares }}</p>
+              <p class="card-text">CardedSoles: {{ tgmData.CardedSoles }}</p>
+              <p class="card-text">Total: {{ tgmData.Total }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
